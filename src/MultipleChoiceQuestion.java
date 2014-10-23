@@ -4,12 +4,12 @@
  * CS 356
  * Homework 1: iClicker
  */
-public class SampleMultipleChoiceQuestion implements Question {
+public class MultipleChoiceQuestion implements Question {
 
 	private String question;
 	private String[] answerScheme = {"A", "B", "C", "D"};
 	
-	public SampleMultipleChoiceQuestion(String question) {
+	public MultipleChoiceQuestion(String question) {
 		this.setQuestion(question);
 	}
 	

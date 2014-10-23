@@ -15,8 +15,8 @@ public class ClickerService {
 	}
 	
 	public void addAnswer(Student s) {
-		answers.put(s.getID(), s.getResponse());
-		counter[s.getResponse()]++; 
+		if (answers.put(s.getID(), s.getResponse()) == null)
+			counter[s.getResponse()]++; 
 	}
 
     public void formatQuestion(Question q) {
